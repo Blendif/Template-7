@@ -1,0 +1,128 @@
+<!DOCT<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sultan Health - Community Wellness</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for sticky header and carousel */
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .carousel-item {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+    }
+    /* Smooth scrolling for mobile */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Sticky Navigation -->
+  <nav class="sticky-header py-4 px-6 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700">Sultan Health</h1>
+      <div class="space-x-4">
+        <a href="#home" class="text-gray-600 hover:text-blue-700">Home</a>
+        <a href="#services" class="text-gray-600 hover:text-blue-700">Services</a>
+        <a href="#testimonials" class="text-gray-600 hover:text-blue-700">Testimonials</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-16 px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Healthy Living with <span class="text-yellow-300">RCHP Sultan</span></h1>
+    <p class="text-lg md:text-xl max-w-xl mx-auto mb-6">Affordable health consultations and wellness programs to keep you and your community thriving.</p>
+    <a href="#contact" class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-full transition">Get Started Now</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Why Sultan Health?</h2>
+    <p class="text-gray-700 text-lg">As a Junior Community Health Practitioner, RCHP Sultan offers trusted health consultations and wellness programs tailored to families and communities in Potiskum, ensuring accessible care for all.</p>
+    <!-- Portfolio Image Placeholder -->
+    <div class="mt-6">
+      <img src="https://via.placeholder.com/600x300?text=Health+Clinic" alt="Health Clinic" class="mx-auto rounded-lg shadow-md">
+      <p class="text-sm text-gray-500 mt-2">Replace with your portfolio image of a clinic or health outreach (recommended 600x300px).</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-white py-12 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Health Consultations</h3>
+          <p class="text-gray-600 mb-2">Personalized health advice for common ailments, preventive care, and wellness check-ins.</p>
+          <p class="font-bold text-blue-700">₦3,000 <span class="text-sm text-gray-500">(Per Session)</span></p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">First Aid Training</h3>
+          <p class="text-gray-600 mb-2">Learn essential first aid skills for emergencies, perfect for schools and communities.</p>
+          <p class="font-bold text-blue-700">₦5,000 <span class="text-sm text-gray-500">(Group Rates Available)</span></p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Community Wellness Programs</h3>
+          <p class="text-gray-600 mb-2">Workshops on nutrition, hygiene, and disease prevention for healthier communities.</p>
+          <p class="font-bold text-blue-700">₦7,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Carousel) -->
+  <section id="testimonials" class="py-12 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">What Clients Say</h2>
+    <div class="carousel">
+      <div class="carousel-item bg-white p-6 rounded-lg shadow mx-2">
+        <p class="italic">"Sultan’s consultation helped my family manage malaria effectively."</p>
+        <p class="mt-4 font-bold text-blue-700">– Amina Y., Mother, Potiskum</p>
+      </div>
+      <div class="carousel-item bg-white p-6 rounded-lg shadow mx-2">
+        <p class="italic">"The first aid training was practical and saved a life in our school!"</p>
+        <p class="mt-4 font-bold text-blue-700">– Mr. Idris K., Teacher, Damaturu</p>
+      </div>
+      <div class="carousel-item bg-white p-6 rounded-lg shadow mx-2">
+        <p class="italic">"The wellness program improved hygiene in our community."</p>
+        <p class="mt-4 font-bold text-blue-700">– Hauwa M., Community Leader, Nguru</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA with Form -->
+  <section id="contact" class="bg-blue-50 py-12 px-6 text-center">
+    <h3 class="text-2xl font-bold mb-4">Ready to Stay Healthy?</h3>
+    <p class="mb-6 text-gray-700">Sign up for a free consultation or subscribe to our wellness programs!</p>
+    <form class="max-w-md mx-auto space-y-4" action="https://checkout.flutterwave.com/v3/hosted/pay/mock_sultanhealth_456789" method="GET">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+      <input type="text" placeholder="Your Health Concern" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700">
+      <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-full transition w-full">Subscribe to Wellness Program</button>
+    </form>
+    <p class="mt-4">Or <a href="https://wa.me/2348121753340" target="_blank" class="text-blue-700 hover:underline">reach us on WhatsApp</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>&copy; 2025 Sultan Health | Layin PS, Potiskum | Built by KLYRO</p>
+  </footer>
+
+</body>
+</html>￼Enter
